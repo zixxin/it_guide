@@ -35,14 +35,18 @@ class _kiosk_mainState extends State <KioskMain> {
               children: <Widget>[
                 Expanded(
                   child: Container(
-                    padding: EdgeInsets.all(50.0),
+                    height: 120,
                     color: Colors.green[400],
-                    child: Text('버거',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
+                    child: Container(
+                      margin: EdgeInsets.only(top: 40),
+                      child: Text('버거',
+                        style: TextStyle(
+                          fontSize: 35.0,
+                          fontWeight: FontWeight.bold
+                        ),
+                        textAlign: TextAlign.center,
+                      )
+                    )
                   ),
                 ),
                 Expanded(
@@ -50,9 +54,18 @@ class _kiosk_mainState extends State <KioskMain> {
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.black),
                     ),
-                    padding: EdgeInsets.all(50.0),
+                    height: 120,
                     // color: Colors.green,
-                    child: Text('사이드')
+                    child: Container(
+                      margin: EdgeInsets.only(top: 40),
+                      child: Text('사이드',
+                        style: TextStyle(
+                          fontSize: 35.0,
+                          fontWeight: FontWeight.bold
+                        ),
+                        textAlign: TextAlign.center,
+                      )
+                    )
                   ),
                 ),
                 Expanded(
@@ -60,9 +73,19 @@ class _kiosk_mainState extends State <KioskMain> {
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.black),
                     ),
-                    padding: EdgeInsets.all(50.0),
+                    height: 120,
+                    // padding: EdgeInsets.all(40.0),
                     // color: Colors.purple,
-                    child: Text('음료수')
+                    child: Container(
+                      margin: EdgeInsets.only(top: 40),
+                      child: Text('디저트',
+                        style: TextStyle(
+                          fontSize: 35.0,
+                          fontWeight: FontWeight.bold
+                        ),
+                        textAlign: TextAlign.center,
+                      )
+                    )
                   ),
                 ),
               ]
@@ -76,6 +99,10 @@ class _kiosk_mainState extends State <KioskMain> {
                     // padding: EdgeInsets.all(120.0),
                     // color: Colors.pinkAccent,
                     child: ElevatedButton (
+                      style: ButtonStyle(
+                        backgroundColor: // Colors.blue;
+                            MaterialStateProperty.all <Color>(Colors.white),
+                      ),
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -104,7 +131,7 @@ class _kiosk_mainState extends State <KioskMain> {
                       height: 150,
                       // padding: EdgeInsets.all(120.0),
                       // color: Colors.pinkAccent,
-                      child: Image.asset("img/burger.png"),
+                      child: Image.asset("img/burger1.png"),
                       // child: Text('2')
                   )
                 ),
@@ -127,11 +154,14 @@ class _kiosk_mainState extends State <KioskMain> {
               height: 220,
               // padding: EdgeInsets.all(120.0),
               color: Colors.grey[300],
-              child: Text('카트',
-                style: TextStyle(
-                  fontSize: 15.0,
-                  fontWeight: FontWeight.bold
-                ),
+              child: Container(
+                margin: const EdgeInsets.all(20),
+                child: Text('카트',
+                  style: TextStyle(
+                    fontSize: 25.0,
+                    fontWeight: FontWeight.bold
+                  ),
+                )
               )
             ),
 
@@ -142,11 +172,15 @@ class _kiosk_mainState extends State <KioskMain> {
                     height: 120,
                     // padding: EdgeInsets.all(120.0),
                     color: Colors.grey[400],
-                    child: Text('취소',
-                      style: TextStyle(
-                        fontSize: 15.0,
-                        fontWeight: FontWeight.bold
-                      ),
+                    child: Container(
+                      margin: EdgeInsets.only(top: 40),
+                      child: Text('취소',
+                        style: TextStyle(
+                          fontSize: 35.0,
+                          fontWeight: FontWeight.bold
+                        ),
+                        textAlign: TextAlign.center,
+                      )
                     )
                   ),
                 ),
@@ -155,11 +189,15 @@ class _kiosk_mainState extends State <KioskMain> {
                     height: 120,
                     // padding: EdgeInsets.all(120.0),
                     color: Colors.grey[500],
-                    child: Text('결제하기',
-                      style: TextStyle(
-                        fontSize: 15.0,
-                        fontWeight: FontWeight.bold
-                      ),
+                    child: Container(
+                      margin: EdgeInsets.only(top: 40),
+                      child: Text('결제하기',
+                        style: TextStyle(
+                          fontSize: 35.0,
+                          fontWeight: FontWeight.bold
+                        ),
+                        textAlign: TextAlign.center,
+                      )
                     )
                   ),
                 )
