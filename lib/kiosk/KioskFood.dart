@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:it_guide/kiosk/KioskOrder.dart';
 import 'package:it_guide/main.dart';
 
 class KioskFood extends StatefulWidget {
@@ -37,7 +38,7 @@ class _KioskFoodState extends State<KioskFood> {
             Container(
               height: 20,
               margin: const EdgeInsets.all(10),
-              child: Text("1) 선택한 메뉴 :   더블 패티 버거 세트 ")
+              child: Text("1) 선택한 메뉴 :   스파이시 치킨 버거 세트 ")
             ),
             Container(
               height: 50,
@@ -47,13 +48,13 @@ class _KioskFoodState extends State<KioskFood> {
                 Expanded (
                   child: Container(
                     height: 120,
-                    child: Image.asset("img/burger.png"),
+                    child: Image.asset("img/onlyburger.png"),
                   )
                 ),
                 Expanded (
                   child: Container(
                     height: 120,
-                    child: Image.asset("img/cola.png"),
+                    child: Image.asset("img/coca.png"), // 왜 안뜨지???
                   )
                 ),
                 Expanded (
@@ -81,7 +82,7 @@ class _KioskFoodState extends State<KioskFood> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MyApp()),
+                    MaterialPageRoute(builder: (context) => KioskOrder()),
                   );
                 },
                 child: Text(
