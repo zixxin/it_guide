@@ -36,7 +36,10 @@ class _kiosk_mainState extends State <KioskMain> {
                 Expanded(
                   child: Container(
                     height: 120,
-                    color: Colors.green[400],
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      border: Border.all(color: Colors.black, width: 2),
+                    ),
                     child: Container(
                       margin: EdgeInsets.only(top: 40),
                       child: Text('버거',
