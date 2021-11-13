@@ -33,7 +33,10 @@ class _KioskOrderState extends State<KioskOrder> {
                 Expanded(
                   child: Container(
                     height: 120,
-                    color: Colors.green[400],
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      border: Border.all(color: Colors.black, width: 2),
+                    ),
                     child: Container(
                       margin: EdgeInsets.only(top: 40),
                       child: Text('버거',
@@ -153,12 +156,51 @@ class _KioskOrderState extends State<KioskOrder> {
               color: Colors.grey[300],
               child: Container(
                 margin: const EdgeInsets.all(20),
-                child: Text('카트',
-                  style: TextStyle(
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold
-                  ),
-                )
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Container(
+                        child: Text('카트',
+                          style: TextStyle(
+                            fontSize: 25.0,
+                            fontWeight: FontWeight.bold
+                          ),
+                        )
+                      )
+                    ),
+                    Expanded(
+                      child: ElevatedButton (
+                        style: ButtonStyle(
+                          backgroundColor: // Colors.blue;
+                              MaterialStateProperty.all <Color>(Colors.white),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => MyApp()),
+                          );
+                        },
+                        child: Text('스파이스 치킨 버거 세트       X\n\n5900원',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
+                      )
+                    ),
+                    // Expanded(
+                    //   child: Container(
+                    //     height: 150.0,
+                    //     width: 250.0,
+                    //     color: Colors.white,
+                        
+                    //   ),
+                    // )
+                  ],
+                ),
               )
             ),
 
