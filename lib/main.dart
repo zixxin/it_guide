@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:it_guide/card/card_camera_1.dart';
 import 'package:it_guide/kiosk/KioskMain.dart';
+import 'package:it_guide/zoom/zmenu.dart';
 
 void main() {
   runApp(MyApp());
@@ -56,10 +58,24 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Row(children: <Widget>[
               Expanded(
-                child: Container(
-                    padding: EdgeInsets.all(50.0),
-                    color: Colors.cyan,
-                    child: Text('ZOOM')),
+                child: SizedBox(
+                  width: 120,
+                  height: 120,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => MenuPage(title: "zoom")),
+                      );
+                    },
+                    child: Image.asset("img/zoom_icon.png"),
+                    style: ButtonStyle(
+                      backgroundColor: // Colors.blue;
+                          MaterialStateProperty.all<Color>(Colors.white),
+                    ),
+                  ),
+                ),
               ),
               Expanded(
                 child: SizedBox(
@@ -73,27 +89,99 @@ class _MyHomePageState extends State<MyHomePage> {
                             builder: (context) => KioskMain(title: '키오스크')),
                       );
                     },
-                    child: Text(
-                      '키오스크',
-                      style: TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
+                    child: Image.asset("img/kiosk_icon.png"),
                     style: ButtonStyle(
                       backgroundColor: // Colors.blue;
-                          MaterialStateProperty.all<Color>(Colors.pink),
+                          MaterialStateProperty.all<Color>(Colors.white),
                     ),
                   ),
                 ),
               ),
               Expanded(
-                child: Container(
-                    padding: EdgeInsets.all(50.0),
-                    color: Colors.amber,
-                    child: Text('카드결제')),
-              )
-            ])
+                child: SizedBox(
+                  width: 120,
+                  height: 120,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CardCamera1Page()),
+                      );
+                    },
+                    child: Image.asset("img/card_icon.png"),
+                    style: ButtonStyle(
+                      backgroundColor: // Colors.blue;
+                          MaterialStateProperty.all<Color>(Colors.white),
+                    ),
+                  ),
+                ),
+              ),
+            ]),
+            Row(
+              children: [
+                Expanded(
+                  child: SizedBox(
+                    width: 120,
+                    height: 120,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => CardCamera1Page()),
+                        );
+                      },
+                      child: Image.asset("img/voice_icon.png"),
+                      style: ButtonStyle(
+                        backgroundColor: // Colors.blue;
+                            MaterialStateProperty.all<Color>(Colors.white),
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: SizedBox(
+                    width: 120,
+                    height: 120,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => CardCamera1Page()),
+                        );
+                      },
+                      child: Image.asset("img/card_icon.png"),
+                      style: ButtonStyle(
+                        backgroundColor: // Colors.blue;
+                            MaterialStateProperty.all<Color>(Colors.white),
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: SizedBox(
+                    width: 120,
+                    height: 120,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => CardCamera1Page()),
+                        );
+                      },
+                      child: Image.asset("img/card_icon.png"),
+                      style: ButtonStyle(
+                        backgroundColor: // Colors.blue;
+                            MaterialStateProperty.all<Color>(Colors.white),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
