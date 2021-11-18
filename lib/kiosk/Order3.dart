@@ -24,8 +24,8 @@ class Order3 extends StatelessWidget {
                   child: Container(
                       height: 120,
                       decoration: BoxDecoration(
-                        color: Colors.red,
-                        border: Border.all(color: Colors.black, width: 2),
+                        color: Colors.red[600],
+                        border: Border.all(color: Colors.black, width: 1),
                       ),
                       child: Container(
                           margin: EdgeInsets.only(top: 40),
@@ -39,7 +39,7 @@ class Order3 extends StatelessWidget {
                 Expanded(
                   child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.red,
+                        color: Colors.red[600],
                         border: Border.all(color: Colors.black),
                       ),
                       height: 120,
@@ -56,7 +56,7 @@ class Order3 extends StatelessWidget {
                 Expanded(
                   child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.red,
+                        color: Colors.red[600],
                         border: Border.all(color: Colors.black),
                       ),
                       height: 120,

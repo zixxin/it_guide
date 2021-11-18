@@ -23,8 +23,8 @@ class Order4 extends StatelessWidget {
                   child: Container(
                       height: 120,
                       decoration: BoxDecoration(
-                        color: Colors.red,
-                        border: Border.all(color: Colors.black, width: 2),
+                        color: Colors.red[600],
+                        border: Border.all(color: Colors.black, width: 1),
                       ),
                       child: Container(
                           margin: EdgeInsets.only(top: 40),
@@ -38,7 +38,7 @@ class Order4 extends StatelessWidget {
                 Expanded(
                   child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.red,
+                        color: Colors.red[600],
                         border: Border.all(color: Colors.black),
                       ),
                       height: 120,
@@ -55,7 +55,7 @@ class Order4 extends StatelessWidget {
                 Expanded(
                   child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.red,
+                        color: Colors.red[600],
                         border: Border.all(color: Colors.black),
                       ),
                       height: 120,
@@ -72,7 +72,7 @@ class Order4 extends StatelessWidget {
                 Expanded(
                   child: Container(
                       decoration: BoxDecoration(
-                        color: Colors.red,
+                        color: Colors.red[600],
                         border: Border.all(color: Colors.black),
                       ),
                       height: 120,
@@ -102,7 +102,7 @@ class Order4 extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 40.0,
                       fontWeight: FontWeight.bold,
-                      color: Colors.red),
+                      color: Colors.red[700]),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -130,7 +130,7 @@ class Order4 extends StatelessWidget {
                 child: ElevatedButton(
                     style: ButtonStyle(
                       backgroundColor: // Colors.blue;
-                          MaterialStateProperty.all<Color>(Colors.indigo),
+                          MaterialStateProperty.all<Color>(Colors.amber),
                     ),
                     onPressed: () {
                       Navigator.push(

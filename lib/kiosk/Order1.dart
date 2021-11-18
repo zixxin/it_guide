@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:it_guide/kiosk/Order2.dart';
-import 'package:it_guide/main.dart';
 
 class Order1 extends StatelessWidget {
   const Order1({Key? key}) : super(key: key);
@@ -24,8 +23,8 @@ class Order1 extends StatelessWidget {
                   child: Container(
                       height: 120,
                       decoration: BoxDecoration(
-                        color: Colors.red,
-                        border: Border.all(color: Colors.black, width: 2),
+                        color: Colors.red[600],
+                        border: Border.all(color: Colors.black, width: 1),
                       ),
                       child: Container(
                           margin: EdgeInsets.only(top: 40),

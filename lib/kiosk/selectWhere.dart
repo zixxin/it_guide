@@ -32,7 +32,7 @@ class _selectWhereState extends State<selectWhere> {
             Container(
               margin: EdgeInsets.only(right: 30, left: 30),
               height: 200,
-              color: Colors.blue,
+              // color: Colors.blue,
               child: Row(
                 children: [
                   Expanded(
