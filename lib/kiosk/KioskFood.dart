@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:it_guide/kiosk/KioskOrder.dart';
-import 'package:it_guide/main.dart';
 
 class KioskFood extends StatefulWidget {
   KioskFood({Key? key, title}) : super(key: key);
@@ -29,13 +28,19 @@ class _KioskFoodState extends State<KioskFood> {
             margin: const EdgeInsets.all(10),
             child: Text(
               "선택한 메뉴를 확인하세요",
+              style: TextStyle(
+                fontSize: 18.0,
+              ),
               textAlign: TextAlign.center,
             ),
           ),
           Container(
               height: 20,
               margin: const EdgeInsets.all(10),
-              child: Text("1) 선택한 메뉴 :   스파이시 치킨 버거 세트 ")),
+              child: Text(
+                "1) 선택한 메뉴 :   스파이시 치킨 버거 세트 ",
+                style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+              )),
           Container(
             height: 50,
           ),
@@ -64,7 +69,10 @@ class _KioskFoodState extends State<KioskFood> {
           Container(
             height: 20,
             margin: const EdgeInsets.only(left: 10),
-            child: Text("2) 주문 금액 :   5900원"),
+            child: Text(
+              "2) 주문 금액 :   5900원",
+              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+            ),
           ),
           Container(
             height: 50,
@@ -92,37 +100,47 @@ class _KioskFoodState extends State<KioskFood> {
           ),
           Positioned(child: _text2()),
           Container(
-              margin: const EdgeInsets.only(top: 10),
-              height: 200,
-              // padding: EdgeInsets.all(120.0),
-              color: Colors.grey[300],
-              child: Text(
-                '카트',
-                style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
-              )),
+            margin: const EdgeInsets.only(top: 10),
+            height: 200,
+            color: Colors.grey[300],
+            child: Container(
+                margin: EdgeInsets.all(20),
+                child: Text(
+                  '카트',
+                  style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
+                )),
+          ),
           Row(
             children: [
               Expanded(
                 child: Container(
-                    height: 120,
-                    // padding: EdgeInsets.all(120.0),
-                    color: Colors.grey[400],
-                    child: Text(
-                      '취소',
-                      style: TextStyle(
-                          fontSize: 15.0, fontWeight: FontWeight.bold),
-                    )),
+                  height: 120,
+                  // padding: EdgeInsets.all(120.0),
+                  color: Colors.grey[400],
+                  child: Container(
+                      margin: EdgeInsets.only(top: 40),
+                      child: Text(
+                        '취소',
+                        style: TextStyle(
+                            fontSize: 35.0, fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.center,
+                      )),
+                ),
               ),
               Expanded(
                 child: Container(
-                    height: 120,
-                    // padding: EdgeInsets.all(120.0),
-                    color: Colors.grey[500],
-                    child: Text(
-                      '결제하기',
-                      style: TextStyle(
-                          fontSize: 15.0, fontWeight: FontWeight.bold),
-                    )),
+                  height: 120,
+                  // padding: EdgeInsets.all(120.0),
+                  color: Colors.grey[500],
+                  child: Container(
+                      margin: EdgeInsets.only(top: 40),
+                      child: Text(
+                        '결제하기',
+                        style: TextStyle(
+                            fontSize: 35.0, fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.center,
+                      )),
+                ),
               )
             ],
           )

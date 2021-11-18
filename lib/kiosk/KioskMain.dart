@@ -3,7 +3,6 @@ import 'package:it_guide/kiosk/KioskFood.dart';
 
 class KioskMain extends StatefulWidget {
   KioskMain({Key? key, required this.title}) : super(key: key);
-  // KioskMain({Key key, this.title}) : super(key: key);
   final String title;
 
   @override
@@ -28,17 +27,19 @@ class _kiosk_mainState extends State<KioskMain> {
             Row(children: <Widget>[
               Expanded(
                 child: Container(
-                    height: 120,
+                    height: 100,
                     decoration: BoxDecoration(
-                      color: Colors.red,
-                      border: Border.all(color: Colors.black, width: 2),
+                      color: Colors.red[600],
+                      border: Border.all(color: Colors.black, width: 1),
                     ),
                     child: Container(
-                        margin: EdgeInsets.only(top: 40),
+                        margin: EdgeInsets.only(top: 30),
                         child: Text(
                           '버거',
                           style: TextStyle(
-                              fontSize: 35.0, fontWeight: FontWeight.bold),
+                            fontSize: 35.0,
+                            fontWeight: FontWeight.bold,
+                          ),
                           textAlign: TextAlign.center,
                         ))),
               ),
@@ -47,10 +48,10 @@ class _kiosk_mainState extends State<KioskMain> {
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.black),
                     ),
-                    height: 120,
+                    height: 100,
                     // color: Colors.green,
                     child: Container(
-                        margin: EdgeInsets.only(top: 40),
+                        margin: EdgeInsets.only(top: 30),
                         child: Text(
                           '사이드',
                           style: TextStyle(
@@ -63,11 +64,11 @@ class _kiosk_mainState extends State<KioskMain> {
                     decoration: BoxDecoration(
                       border: Border.all(color: Colors.black),
                     ),
-                    height: 120,
+                    height: 100,
                     // padding: EdgeInsets.all(40.0),
                     // color: Colors.purple,
                     child: Container(
-                        margin: EdgeInsets.only(top: 40),
+                        margin: EdgeInsets.only(top: 30),
                         child: Text(
                           '디저트',
                           style: TextStyle(
@@ -110,11 +111,10 @@ class _kiosk_mainState extends State<KioskMain> {
             ),
             Positioned(child: _text1()),
             Container(
-              height: 120,
+              height: 150,
             ),
             Container(
                 height: 220,
-                // padding: EdgeInsets.all(120.0),
                 color: Colors.grey[300],
                 child: Container(
                     margin: const EdgeInsets.all(20),
