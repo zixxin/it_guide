@@ -23,16 +23,16 @@ class _CardInfoPageState extends State<CardInfoPage> {
         title: Text('결제 카드 등록'),
         centerTitle: true,
         backgroundColor: Color(0XFF242424),
-        leading: IconButton(
-          alignment: Alignment.center,
-          icon: Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.pop(
-              context,
-              MaterialPageRoute(builder: (context) => CardCameraPage()),
-            );
-          },
-        ),
+        // leading: IconButton(
+        //   alignment: Alignment.center,
+        //   icon: Icon(Icons.arrow_back),
+        //   onPressed: () {
+        //     Navigator.pop(
+        //       context,
+        //       MaterialPageRoute(builder: (context) => CardCameraPage()),
+        //     );
+        //   },
+        // ),
         actions: [
           IconButton(
             alignment: Alignment.center,
@@ -225,7 +225,7 @@ class _CardInfoPageState extends State<CardInfoPage> {
             Container(
               height: 20,
             ),
-            _checkbox(),
+            // _checkbox(),
             Container(
               height: 130,
             ),
@@ -403,16 +403,16 @@ class _CardInfoPageState extends State<CardInfoPage> {
                             Navigator.of(context).pop();
                           },
                         ),
-                        TextButton(
-                          child: Text('완료'),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => MenuPage()),
-                            );
-                          },
-                        ),
+                        // TextButton(
+                        //   child: Text('완료'),
+                        //   onPressed: () {
+                        //     Navigator.push(
+                        //       context,
+                        //       MaterialPageRoute(
+                        //           builder: (context) => MenuPage()),
+                        //     );
+                        //   },
+                        // ),
                       ]);
                 }),
             child: Text(
@@ -436,60 +436,60 @@ class _CardInfoPageState extends State<CardInfoPage> {
     );
   }
 
-  Widget _checkbox() {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        CheckboxListTile(
-          title: const Text('모두 동의합니다.'),
-          value: _isChecked1,
-          onChanged: (bool value) {
-            setState(() {
-              _isChecked1 = value;
-              _isChecked2 = value;
-              _isChecked3 = value;
-              _isChecked4 = value;
-              _isChecked5 = value;
-            });
-          },
-        ),
-        CheckboxListTile(
-          title: const Text('(필수) 전자금융거래 기본 약관 동의'),
-          value: _isChecked2,
-          onChanged: (bool value) {
-            setState(() {
-              _isChecked2 = value;
-            });
-          },
-        ),
-        CheckboxListTile(
-          title: const Text('(필수) 개인정보 수입 이용 동의 (결제카드)'),
-          value: _isChecked3,
-          onChanged: (bool value) {
-            setState(() {
-              _isChecked3 = value;
-            });
-          },
-        ),
-        CheckboxListTile(
-          title: const Text('(필수) 자동승인 약관 동의'),
-          value: _isChecked4,
-          onChanged: (bool value) {
-            setState(() {
-              _isChecked4 = value;
-            });
-          },
-        ),
-        CheckboxListTile(
-          title: const Text('(필수) 개인정보 수집/이용 동의 (회원가입)'),
-          value: _isChecked5,
-          onChanged: (bool value) {
-            setState(() {
-              _isChecked5 = value;
-            });
-          },
-        ),
-      ],
-    );
-  }
+  // Widget _checkbox() {
+  //   return Column(
+  //     crossAxisAlignment: CrossAxisAlignment.start,
+  //     children: [
+  //       CheckboxListTile(
+  //         title: const Text('모두 동의합니다.'),
+  //         value: _isChecked1,
+  //         onChanged: (bool value) {
+  //           setState(() {
+  //             _isChecked1 = value;
+  //             _isChecked2 = value;
+  //             _isChecked3 = value;
+  //             _isChecked4 = value;
+  //             _isChecked5 = value;
+  //           });
+  //         },
+  //       ),
+  //       CheckboxListTile(
+  //         title: const Text('(필수) 전자금융거래 기본 약관 동의'),
+  //         value: _isChecked2,
+  //         onChanged: (bool value) {
+  //           setState(() {
+  //             _isChecked2 = value;
+  //           });
+  //         },
+  //       ),
+  //       CheckboxListTile(
+  //         title: const Text('(필수) 개인정보 수입 이용 동의 (결제카드)'),
+  //         value: _isChecked3,
+  //         onChanged: (bool value) {
+  //           setState(() {
+  //             _isChecked3 = value;
+  //           });
+  //         },
+  //       ),
+  //       CheckboxListTile(
+  //         title: const Text('(필수) 자동승인 약관 동의'),
+  //         value: _isChecked4,
+  //         onChanged: (bool value) {
+  //           setState(() {
+  //             _isChecked4 = value;
+  //           });
+  //         },
+  //       ),
+  //       CheckboxListTile(
+  //         title: const Text('(필수) 개인정보 수집/이용 동의 (회원가입)'),
+  //         value: _isChecked5,
+  //         onChanged: (bool value) {
+  //           setState(() {
+  //             _isChecked5 = value;
+  //           });
+  //         },
+  //       ),
+  //     ],
+  //   );
+  // }
 }

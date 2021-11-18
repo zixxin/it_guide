@@ -166,41 +166,41 @@ class _CardCameraPageState extends State<CardCameraPage> {
             Container(
               height: 20,
             ),
-            _checkButton(),
+            // _checkButton(),
           ],
         ),
       ),
     );
   }
 
-  Widget _checkButton() {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        SizedBox(
-          width: 390,
-          height: 70,
-          child: ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => CardInfoPage()),
-              );
-            },
-            child: Text(
-              '직접 입력',
-              style: TextStyle(
-                fontSize: 23,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            style: ButtonStyle(
-              backgroundColor:
-                  MaterialStateProperty.all<Color>(Color(0XFF292929)),
-            ),
-          ),
-        ),
-      ],
-    );
-  }
+  // Widget _checkButton() {
+  //   return Row(
+  //     crossAxisAlignment: CrossAxisAlignment.start,
+  //     children: [
+  //       // SizedBox(
+  //       //   width: 390,
+  //       //   height: 70,
+  //       //   child: ElevatedButton(
+  //       //     onPressed: () {
+  //       //       Navigator.push(
+  //       //         context,
+  //       //         MaterialPageRoute(builder: (context) => CardInfoPage()),
+  //       //       );
+  //       //     },
+  //       //     child: Text(
+  //       //       '직접 입력',
+  //       //       style: TextStyle(
+  //       //         fontSize: 23,
+  //       //         fontWeight: FontWeight.bold,
+  //       //       ),
+  //       //     ),
+  //       //     style: ButtonStyle(
+  //       //       backgroundColor:
+  //       //           MaterialStateProperty.all<Color>(Color(0XFF292929)),
+  //       //     ),
+  //       //   ),
+  //       // ),
+  //     ],
+  //   );
+  // }
 }
