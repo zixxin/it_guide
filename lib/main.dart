@@ -38,10 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(
           widget.title,
-          style: TextStyle(
-              // color: Colors.yellow[700],
-              fontSize: 25.0,
-              fontWeight: FontWeight.bold),
+          style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
         ),
       ),
       body: Center(
@@ -51,10 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Container(
               width: 120,
-              // padding: EdgeInsets.all(120.0),
-              // color: Colors.pinkAccent,
               child: Image.asset("img/banner.png"),
-              // child: Text('2')
             ),
             Row(children: <Widget>[
               Expanded(
@@ -71,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     },
                     child: Image.asset("img/zoom_icon.png"),
                     style: ButtonStyle(
-                      backgroundColor: // Colors.blue;
+                      backgroundColor:
                           MaterialStateProperty.all<Color>(Colors.white),
                     ),
                   ),
@@ -91,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     },
                     child: Image.asset("img/kiosk_icon.png"),
                     style: ButtonStyle(
-                      backgroundColor: // Colors.blue;
+                      backgroundColor:
                           MaterialStateProperty.all<Color>(Colors.white),
                     ),
                   ),
@@ -111,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     },
                     child: Image.asset("img/card_icon.png"),
                     style: ButtonStyle(
-                      backgroundColor: // Colors.blue;
+                      backgroundColor:
                           MaterialStateProperty.all<Color>(Colors.white),
                     ),
                   ),
@@ -134,7 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       },
                       child: Image.asset("img/voice_icon.png"),
                       style: ButtonStyle(
-                        backgroundColor: // Colors.blue;
+                        backgroundColor:
                             MaterialStateProperty.all<Color>(Colors.white),
                       ),
                     ),
@@ -148,13 +142,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => CardCamera1Page()),
+                          MaterialPageRoute(builder: (context) => MyApp()),
                         );
                       },
-                      child: Image.asset("img/card_icon.png"),
+                      child: Image.asset("img/youtube_icon.png"),
                       style: ButtonStyle(
-                        backgroundColor: // Colors.blue;
+                        backgroundColor:
                             MaterialStateProperty.all<Color>(Colors.white),
                       ),
                     ),
@@ -168,13 +161,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => CardCamera1Page()),
+                          MaterialPageRoute(builder: (context) => MyApp()),
                         );
                       },
-                      child: Image.asset("img/card_icon.png"),
+                      child: Image.asset("img/bamin_icon.png"),
                       style: ButtonStyle(
-                        backgroundColor: // Colors.blue;
+                        backgroundColor:
                             MaterialStateProperty.all<Color>(Colors.white),
                       ),
                     ),
