@@ -120,7 +120,7 @@ class _CardInfo3PageState extends State<CardInfo3Page> {
                             ),
                           ]);
                     }),
-                child: Image.asset('images/마루.PNG')),
+                child: Image.asset('img/maru.png')),
             Container(
               height: 20,
             ),
