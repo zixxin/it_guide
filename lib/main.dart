@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:it_guide/card/card_camera_1.dart';
 import 'package:it_guide/kiosk/KioskMain.dart';
+import 'package:it_guide/vf/it_menu.dart';
 import 'package:it_guide/zoom/zmenu.dart';
 
 void main() {
@@ -123,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => CardCamera1Page()),
+                              builder: (context) => ITMenuPage(title: "")),
                         );
                       },
                       child: Image.asset("img/voice_icon.png"),
