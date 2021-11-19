@@ -18,10 +18,15 @@ class _MenuPageState extends State<MenuPage> {
         title: '초기 화면',
         home: Scaffold(
           appBar: AppBar(
-            title: const Text('튜토리얼 메뉴'),
-            centerTitle: true,
-            backgroundColor: const Color(0XFF5d6dbe),
-          ),
+              title: const Text('튜토리얼 메뉴'),
+              centerTitle: true,
+              backgroundColor: const Color(0XFF5d6dbe),
+              leading: IconButton(
+                  alignment: Alignment.center,
+                  icon: const Icon(Icons.arrow_back_ios),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  })),
           body: SizedBox(
             width: MediaQuery.of(context).size.width,
             child: Column(
