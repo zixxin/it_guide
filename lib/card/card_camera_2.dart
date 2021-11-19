@@ -71,7 +71,7 @@ class _CardCamera2PageState extends State<CardCamera2Page> {
                             ),
                           ]);
                     }),
-                child: Image.asset('images/마루.PNG')),
+                child: Image.asset('img/maru.png')),
             Container(
               height: 20,
             ),

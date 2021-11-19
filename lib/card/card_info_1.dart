@@ -120,7 +120,7 @@ class _CardInfo1PageState extends State<CardInfo1Page> {
                             ),
                           ]);
                     }),
-                child: Image.asset('images/마루.PNG')),
+                child: Image.asset('img/maru.png')),
             Container(
               height: 20,
             ),
