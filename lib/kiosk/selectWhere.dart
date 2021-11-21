@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:it_guide/kiosk/Order1.dart';
-import 'package:it_guide/main.dart';
+import 'package:it_guide/kiosk/Step1.dart';
 
 class selectWhere extends StatefulWidget {
   const selectWhere({Key? key}) : super(key: key);
@@ -19,7 +18,7 @@ class _selectWhereState extends State<selectWhere> {
             style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
           ),
           backgroundColor: Colors.yellow[700]),
-      body: Center(
+      body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -32,47 +31,28 @@ class _selectWhereState extends State<selectWhere> {
             Container(
               margin: EdgeInsets.only(right: 30, left: 30),
               height: 200,
-              // color: Colors.blue,
               child: Row(
                 children: [
                   Expanded(
                       child: Container(
                           height: 150,
-                          // padding: EdgeInsets.all(120.0),
-                          // color: Colors.pinkAccent,
                           child: ElevatedButton(
                             style: ButtonStyle(
-                              backgroundColor: // Colors.blue;
-                                  MaterialStateProperty.all<Color>(
-                                      Colors.white),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
                             ),
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => Order1()),
-                              );
-                            },
+                            onPressed: () {},
                             child: Image.asset("img/in.png"),
                           ))),
                   Expanded(
                       child: Container(
                           height: 150,
-                          // padding: EdgeInsets.all(120.0),
-                          // color: Colors.pinkAccent,
                           child: ElevatedButton(
                             style: ButtonStyle(
-                              backgroundColor: // Colors.blue;
-                                  MaterialStateProperty.all<Color>(
-                                      Colors.white),
+                              backgroundColor: MaterialStateProperty.all<Color>(
+                                  Colors.white),
                             ),
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => Order1()),
-                              );
-                            },
+                            onPressed: () {},
                             child: Image.asset("img/out.png"),
                           ))),
                 ],
@@ -85,7 +65,8 @@ class _selectWhereState extends State<selectWhere> {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => Order1()),
+                    MaterialPageRoute(
+                        builder: (context) => Step1(title: "키오스크")),
                   );
                 },
                 child: Text(
@@ -97,35 +78,36 @@ class _selectWhereState extends State<selectWhere> {
                   ),
                 ),
                 style: ButtonStyle(
-                  backgroundColor: // Colors.blue;
-                      MaterialStateProperty.all<Color>(Colors.grey),
+                  backgroundColor:
+                      MaterialStateProperty.all<Color>(Colors.indigo),
                 ),
               ),
             ),
-            Positioned(child: _text4())
+            FloatingActionButton(
+                onPressed: () => showDialog(
+                    context: context,
+                    barrierDismissible: true,
+                    builder: (context) {
+                      return AlertDialog(
+                          content: const Text(
+                            "메뉴를 식당 안에서 먹을건지\n아니면 포장할지 정해야해요!\n원하는 방법을 선택한 후\n확인 버튼을 눌러주세요!",
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.bold),
+                            textAlign: TextAlign.center,
+                          ),
+                          actions: <Widget>[
+                            TextButton(
+                              child: const Text('확인'),
+                              onPressed: () {
+                                Navigator.of(context).pop();
+                              },
+                            ),
+                          ]);
+                    }),
+                child: Image.asset('img/maru.png')),
           ],
         ),
       ),
-    );
-  }
-
-  Widget _text4() {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-          padding: EdgeInsets.all(10),
-          color: Colors.blue[300],
-          child: Text(
-            '식당에서 먹고 갈꺼인지 포장해 갈지\n선택해보세요!',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20.0,
-              color: Colors.black,
-            ),
-          ),
-        )
-      ],
     );
   }
 }
