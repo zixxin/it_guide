@@ -25,7 +25,9 @@ class _VoiceType1PageState extends State<VoiceType1Page> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             SizedBox(
-                width: 200, height: 200, child: Image.asset('images/재생버튼.png')),
+                width: 200,
+                height: 200,
+                child: Image.asset('img/play_button.png')),
             Container(
               height: 80,
             ),
