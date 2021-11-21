@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:it_guide/main.dart';
 import 'nzoom.dart';
 import 'jzoom.dart';
 
@@ -25,7 +26,10 @@ class _MenuPageState extends State<MenuPage> {
                   alignment: Alignment.center,
                   icon: const Icon(Icons.arrow_back_ios),
                   onPressed: () {
-                    Navigator.pop(context);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MyApp()),
+                    );
                   })),
           body: SizedBox(
             width: MediaQuery.of(context).size.width,
