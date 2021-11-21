@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:it_guide/kiosk/ThreeFood.dart';
-import 'package:it_guide/main.dart';
 
 class KioskMain extends StatefulWidget {
   KioskMain({Key? key, required this.title}) : super(key: key);
