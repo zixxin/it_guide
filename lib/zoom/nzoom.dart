@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'zmenu.dart';
 import 'newMeeting.dart';
-import 'participate.dart';
 
 class ZPage extends StatefulWidget {
   const ZPage({Key? key, required this.title}) : super(key: key);
