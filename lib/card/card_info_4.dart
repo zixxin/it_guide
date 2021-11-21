@@ -4,7 +4,6 @@ import 'card_info_3.dart';
 
 class CardInfo4Page extends StatefulWidget {
   CardInfo4Page({Key? key}) : super(key: key);
-  // final String title;
 
   @override
   _CardInfo4PageState createState() => _CardInfo4PageState();
@@ -85,7 +84,7 @@ class _CardInfo4PageState extends State<CardInfo4Page> {
             Container(
               height: 20,
             ),
-            // _checkbox(),
+            _checkbox(),
             Container(
               height: 100,
             ),

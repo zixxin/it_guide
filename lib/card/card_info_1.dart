@@ -4,7 +4,6 @@ import 'card_info_2.dart';
 
 class CardInfo1Page extends StatefulWidget {
   CardInfo1Page({Key? key}) : super(key: key);
-  // final String title;
 
   @override
   _CardInfo1PageState createState() => _CardInfo1PageState();

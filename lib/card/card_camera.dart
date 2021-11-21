@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:it_guide/card/card_info_1.dart';
 
 class CardCameraPage extends StatefulWidget {
   CardCameraPage({Key? key, required this.title}) : super(key: key);

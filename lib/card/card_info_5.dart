@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:it_guide/main.dart';
-import 'package:it_guide/zoom/zmenu.dart';
 import 'card_info_4.dart';
 
 class CardInfo5Page extends StatefulWidget {
   CardInfo5Page({Key? key}) : super(key: key);
-  // final String title;
 
   @override
   _CardInfo5PageState createState() => _CardInfo5PageState();
@@ -86,7 +84,7 @@ class _CardInfo5PageState extends State<CardInfo5Page> {
             Container(
               height: 20,
             ),
-            // _checkbox(),
+            _checkbox(),
             Container(
               height: 100,
             ),

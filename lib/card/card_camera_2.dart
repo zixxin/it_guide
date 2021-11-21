@@ -4,7 +4,6 @@ import 'card_info_1.dart';
 
 class CardCamera2Page extends StatefulWidget {
   CardCamera2Page({Key? key}) : super(key: key);
-  // final String title;
 
   @override
   _CardCamera2PageState createState() => _CardCamera2PageState();
