@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
           style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
         ),
       ),
-      body: Center(
+      body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -140,12 +140,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: 120,
                     height: 120,
                     child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyApp()),
-                        );
-                      },
+                      onPressed: () {},
                       child: Image.asset("img/youtube_icon.png"),
                       style: ButtonStyle(
                         backgroundColor:
@@ -159,12 +154,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: 120,
                     height: 120,
                     child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyApp()),
-                        );
-                      },
+                      onPressed: () {},
                       child: Image.asset("img/bamin_icon.png"),
                       style: ButtonStyle(
                         backgroundColor:
