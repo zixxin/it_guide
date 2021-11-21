@@ -27,7 +27,7 @@ class _VoiceTypePageState extends State<VoiceTypePage> {
             SizedBox(
                 width: 600,
                 height: 400,
-                child: Image.asset('images/보이스피싱_유형.jpg')),
+                child: Image.asset('img/voice_kind.jpeg')),
             Container(
               height: 30,
             ),
