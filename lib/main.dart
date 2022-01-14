@@ -41,6 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
           widget.title,
           style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
         ),
+        backgroundColor: const Color(0XFF5d6dbe),
       ),
       body: SafeArea(
         child: Column(

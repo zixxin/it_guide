@@ -21,7 +21,7 @@ class _MenuPageState extends State<MenuPage> {
           appBar: AppBar(
               title: const Text('튜토리얼 메뉴'),
               centerTitle: true,
-              backgroundColor: const Color(0XFF5d6dbe),
+              backgroundColor: const Color(0xff5D6DBE),
               leading: IconButton(
                   alignment: Alignment.center,
                   icon: const Icon(Icons.arrow_back_ios),
